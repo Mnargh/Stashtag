@@ -1,24 +1,53 @@
-# README
+# Stashtag
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Overview
 
-Things you may want to cover:
+A clone of the popular social media application, Instagram created using Ruby on Rails.
 
-* Ruby version
+Duplicates the core functionality of Instagram, where users can post pictures, write comments on pictures and "like" pictures
 
-* System dependencies
+## User Stories
 
-* Configuration
+```
+As a User
+So that other users can see my pictures
+I want to be able to post a picture
 
-* Database creation
+As a User
+So I can give more information about a picture
+I would like to be able to provide a description with a picture on a post
 
-* Database initialization
+As a User
+So that I can see other user's pictures
+I want to be able to see a list of all the pictures that have been posted
 
-* How to run the test suite
+As a User
+So that I can discuss a picture posted with other users
+I want to be able to post a comment on pictures
 
-* Services (job queues, cache servers, search engines, etc.)
+As a User
+So that I can show my appreciation for a picture
+I want to be able to "like" a picture
 
-* Deployment instructions
+As a User
+So that I can tell how popular a picture is
+I want to be able to see how many "likes" a picture has
 
-* ...
+As a User  
+So that I can see who is liking a picture
+I want to be able to see which users have "liked" a picture
+
+As a User
+So that I can correct a mistake in a comment
+I want to be able to edit my own comments after I have posted them
+
+As a User
+So I don't want a comment to be visible any more
+I want to be able to delete a comment I have made
+
+As a User
+So that I can see what other people think about a picture
+I want to be able to see all the comments for that picture
+
+
+```

@@ -8,5 +8,35 @@
   <br><br>
   <%= @post.description %>
   <br>
-  <!-- <% link_to 'Edit Post', edit_post_path -->
+
+  <h2>Comments:</h2>
+  <% @post.comments.each do |comment| %>
+    <!-- <p>
+      <strong>Commenter:</strong>
+      <%= comment.commenter %>
+    </p> -->
+
+    <p>
+      <strong>Comment:</strong>
+      <%= comment.content %>
+    </p>
+  <% end %>
+  <br>
+
+  <h2>Add a comment:</h2>
+  <%= form_with(model: [ @post, @post.comments.build ], local: true) do |form| %>
+  <!-- <p>
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+  </p> -->
+  <p>
+    Comment:<br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<br>
+<%= link_to 'Back', posts_path %>
 </div>

@@ -5,6 +5,15 @@
     <%= image_tag post.image.url(:medium) %>
     <br><br>
     <%= post.description %>
+    <br><br>
+    <%= link_to 'View Post', post_path(post) , :class => "link-class"%>
+    <%= link_to 'Edit Post', edit_post_path(post) , :class => "link-class" %>
+    <%= link_to 'Delete Post', post_path(post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } , :class => "link-class"%>
+
   </div>
-  <br><br><br>
+  <br><br>
+
+  <br>
 <% end %>

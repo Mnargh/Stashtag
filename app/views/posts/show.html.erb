@@ -1,5 +1,10 @@
+
+
 <div class="individual-post">
-  <%= image_tag(@post.image.url(:medium)) %>
-  <br>
+  <div class="post-image">
+    <%= image_tag @post.image.url(:medium) , :class => "image-class" %>
+  </div>
+
+  <br><br>
   <%= @post.description %>
 </div>

@@ -1,2 +1,10 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Posts</h1>
+
+<% @posts.each do |post| %>
+  <div class="individual-post">
+    <%= image_tag post.image.url(:medium) %>
+    <br><br>
+    <%= post.description %>
+  </div>
+  <br><br><br>
+<% end %>

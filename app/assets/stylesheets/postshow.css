@@ -1,0 +1,12 @@
+.individual-post {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  box-shadow: 0 0 2px 5px white;
+}
+
+.post-image {
+
+}
